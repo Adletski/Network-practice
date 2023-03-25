@@ -85,7 +85,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         case .OurCourses:
             navigationController?.pushViewController(OurCoursesTableViewController(), animated: true)
         case .UploadImage:
-            print("upload image")
+            NetworkManager.uploadImage(url: "https://api.imgur.com/3/image")
         }
     }
 }

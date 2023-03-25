@@ -85,14 +85,38 @@ class NetworkManager {
             do {
                 let courses = try JSONDecoder().decode([Course].self, from: data)
                 completion(courses)
-//                DispatchQueue.main.async {
-//                    self.tableView.reloadData()
-//                }
             } catch {
                 print("Error serialization json", error)
             }
+        }.resume()
+    }
+    
+    static func uploadImage(url: String) {
+        
+        guard let image = UIImage(named: "thanos") else { return }
+        let httpHeaders = ["Authorization": "Client-ID 1bd22b9ce396a4c"]
+        
+        guard let imageProperties = ImageProperties(withImage: image, forKey: "image") else { return }
+        
+        guard let url = URL(string: url) else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = httpHeaders
+        request.httpBody = imageProperties.data
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let response = response {
+                print(response)
+            }
             
-            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
         }.resume()
     }
 }

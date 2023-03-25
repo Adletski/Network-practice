@@ -22,6 +22,7 @@
 		604A166A29CF188C0093E2C0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A166929CF188C0093E2C0 /* CollectionViewController.swift */; };
 		604A166C29CF18C80093E2C0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A166B29CF18C80093E2C0 /* CollectionViewCell.swift */; };
 		604A166E29CF27EE0093E2C0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A166D29CF27EE0093E2C0 /* NetworkManager.swift */; };
+		604A167129CF69090093E2C0 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A167029CF69090093E2C0 /* ImageProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		604A166929CF188C0093E2C0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		604A166B29CF18C80093E2C0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		604A166D29CF27EE0093E2C0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		604A167029CF69090093E2C0 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		604A161B29CDE0AE0093E2C0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				604A166F29CF68FB0093E2C0 /* Post request */,
 				604A163729CE29AD0093E2C0 /* Resources */,
 				604A163529CE29970093E2C0 /* App */,
 				604A163329CDFEAC0093E2C0 /* ViewController.swift */,
@@ -107,6 +110,14 @@
 				604A162A29CDE0B10093E2C0 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		604A166F29CF68FB0093E2C0 /* Post request */ = {
+			isa = PBXGroup;
+			children = (
+				604A167029CF69090093E2C0 /* ImageProperties.swift */,
+			);
+			path = "Post request";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				604A164129CED2780093E2C0 /* WebViewController.swift in Sources */,
 				604A162129CDE0AE0093E2C0 /* ImageViewController.swift in Sources */,
 				604A161D29CDE0AE0093E2C0 /* AppDelegate.swift in Sources */,
+				604A167129CF69090093E2C0 /* ImageProperties.swift in Sources */,
 				604A166A29CF188C0093E2C0 /* CollectionViewController.swift in Sources */,
 				604A163429CDFEAD0093E2C0 /* ViewController.swift in Sources */,
 				604A163B29CE2A160093E2C0 /* OurCoursesTableViewCell.swift in Sources */,
