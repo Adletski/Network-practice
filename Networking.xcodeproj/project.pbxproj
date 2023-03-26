@@ -23,6 +23,7 @@
 		604A166C29CF18C80093E2C0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A166B29CF18C80093E2C0 /* CollectionViewCell.swift */; };
 		604A166E29CF27EE0093E2C0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A166D29CF27EE0093E2C0 /* NetworkManager.swift */; };
 		604A167129CF69090093E2C0 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A167029CF69090093E2C0 /* ImageProperties.swift */; };
+		604A167329CF75280093E2C0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A167229CF75280093E2C0 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		604A166B29CF18C80093E2C0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		604A166D29CF27EE0093E2C0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		604A167029CF69090093E2C0 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
+		604A167229CF75280093E2C0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				604A166929CF188C0093E2C0 /* CollectionViewController.swift */,
 				604A166B29CF18C80093E2C0 /* CollectionViewCell.swift */,
 				604A166D29CF27EE0093E2C0 /* NetworkManager.swift */,
+				604A167229CF75280093E2C0 /* DataProvider.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				604A163429CDFEAD0093E2C0 /* ViewController.swift in Sources */,
 				604A163B29CE2A160093E2C0 /* OurCoursesTableViewCell.swift in Sources */,
 				604A163929CE29E40093E2C0 /* OurCoursesTableViewController.swift in Sources */,
+				604A167329CF75280093E2C0 /* DataProvider.swift in Sources */,
 				604A161F29CDE0AE0093E2C0 /* SceneDelegate.swift in Sources */,
 				604A163D29CEB3EE0093E2C0 /* CourseModel.swift in Sources */,
 				604A166C29CF18C80093E2C0 /* CollectionViewCell.swift in Sources */,
