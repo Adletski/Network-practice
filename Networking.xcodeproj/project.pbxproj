@@ -24,6 +24,8 @@
 		604A166E29CF27EE0093E2C0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A166D29CF27EE0093E2C0 /* NetworkManager.swift */; };
 		604A167129CF69090093E2C0 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A167029CF69090093E2C0 /* ImageProperties.swift */; };
 		604A167329CF75280093E2C0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A167229CF75280093E2C0 /* DataProvider.swift */; };
+		604A167529D023920093E2C0 /* AlamofireNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A167429D023920093E2C0 /* AlamofireNetworkRequest.swift */; };
+		604A167829D023F80093E2C0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 604A167729D023F80093E2C0 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,7 @@
 		604A166D29CF27EE0093E2C0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		604A167029CF69090093E2C0 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 		604A167229CF75280093E2C0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		604A167429D023920093E2C0 /* AlamofireNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				604A163229CDE8220093E2C0 /* SnapKit in Frameworks */,
+				604A167829D023F80093E2C0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,7 @@
 				604A166B29CF18C80093E2C0 /* CollectionViewCell.swift */,
 				604A166D29CF27EE0093E2C0 /* NetworkManager.swift */,
 				604A167229CF75280093E2C0 /* DataProvider.swift */,
+				604A167429D023920093E2C0 /* AlamofireNetworkRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			name = Networking;
 			packageProductDependencies = (
 				604A163129CDE8220093E2C0 /* SnapKit */,
+				604A167729D023F80093E2C0 /* Alamofire */,
 			);
 			productName = Networking;
 			productReference = 604A161929CDE0AE0093E2C0 /* Networking.app */;
@@ -172,6 +178,7 @@
 			mainGroup = 604A161029CDE0AE0093E2C0;
 			packageReferences = (
 				604A163029CDE8220093E2C0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				604A167629D023F80093E2C0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 604A161A29CDE0AE0093E2C0 /* Products */;
 			projectDirPath = "";
@@ -205,6 +212,7 @@
 				604A162129CDE0AE0093E2C0 /* ImageViewController.swift in Sources */,
 				604A161D29CDE0AE0093E2C0 /* AppDelegate.swift in Sources */,
 				604A167129CF69090093E2C0 /* ImageProperties.swift in Sources */,
+				604A167529D023920093E2C0 /* AlamofireNetworkRequest.swift in Sources */,
 				604A166A29CF188C0093E2C0 /* CollectionViewController.swift in Sources */,
 				604A163429CDFEAD0093E2C0 /* ViewController.swift in Sources */,
 				604A163B29CE2A160093E2C0 /* OurCoursesTableViewCell.swift in Sources */,
@@ -430,6 +438,14 @@
 				kind = branch;
 			};
 		};
+		604A167629D023F80093E2C0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +453,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 604A163029CDE8220093E2C0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		604A167729D023F80093E2C0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 604A167629D023F80093E2C0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
